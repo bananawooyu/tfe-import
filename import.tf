@@ -4,6 +4,7 @@ import {
 }
 
 variable "vpc_id" {
+    default = ""
     validation {
         condition     = length(var.vpc_id) > 0 
         error_message = "Error 원인 : VPC를 찾지 못했습니다"
