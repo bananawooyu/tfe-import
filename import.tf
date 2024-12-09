@@ -5,7 +5,7 @@ import {
 
 variable "vpc_id" {
     validation {
-        condition     = length(var.nic_subnet_name) > 0 
+        condition     = length(var.vpc_id) > 0 
         error_message = "Error 원인 : VPC를 찾지 못했습니다"
     }
 }
