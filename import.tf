@@ -12,7 +12,7 @@ variable "vpc_name" {
 
 data "aws_vpc" "vpc" {
   filter {
-    name = "tag:name"
+    name = "tag:Name"
     values = [var.vpc_name]
   }
 }
