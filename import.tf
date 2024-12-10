@@ -3,18 +3,16 @@ import {
   id = data.aws_vpc.vpc.id
 }
 
-variable "vpc_id" {
-    default = ""
+variable "vpc_name" {
     validation {
-        condition     = length(var.vpc_id) > 0 
+        condition     = length(var.vpc_name) > 0 
         error_message = "Error 원인 : VPC를 찾지 못했습니다"
     }
 }
 
 data "aws_vpc" "vpc" {
-  id = var.vpc_id
   filter {
     name = "tag:name"
-    values = [var.vpc_id]
+    values = [var.vpc_name]
   }
 }
