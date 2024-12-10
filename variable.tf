@@ -1,7 +1,3 @@
-variable "TF_VAR_LOG_LEVEL" {
-  default = "info"
-}
-
 variable "ecs_cluster_name" {
     validation {
         condition     = length(var.ecs_cluster_name) > 0 
