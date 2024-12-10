@@ -1,1 +1,1 @@
-vpc_name = "cn-vpc"
+ecs_cluster_name = "cn-cluster"
