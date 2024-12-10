@@ -5,5 +5,5 @@ import {
 
 import {
   to = aws_ecr_repository.service
-  id = aws_ecr_repositories.ecr-apache
+  id = data.aws_ecr_repositories.ecr-apache
 }
